@@ -1,30 +1,37 @@
 # Heart Disease Prediction – Notebook
 
-This repository contains a Google Colab–style notebook that demonstrates an end-to-end machine learning pipeline for heart disease prediction using Logistic Regression.
+## Overview
+This repository contains a Google Colab–style notebook that demonstrates an end-to-end machine learning pipeline for predicting heart disease using two models: Logistic Regression and Decision Tree.
 
-## Project Overview
-The notebook covers:
-- Data loading and cleaning
-- Handling missing values
-- Encoding categorical features
-- Building a leakage-safe machine learning pipeline
-- Model training and evaluation
-- Confusion matrix and classification report analysis
-- Exporting the trained model using joblib
+The notebook covers data cleaning, preprocessing, pipeline-based model training, evaluation using classification metrics and confusion matrices, and model export using joblib for deployment in a web application.
 
 ## Dataset
-The project uses the UCI Heart Disease dataset.
+- UCI Heart Disease Dataset  
+- Target variable: `num`  
+  - 0 → No heart disease  
+  - 1 → Heart disease present  
 
-## Model
-- Logistic Regression (binary classification: heart disease vs no heart disease)
+## Models
+- Logistic Regression  
+- Decision Tree Classifier  
+
+Both models are trained using Scikit-learn Pipelines to ensure proper preprocessing and to prevent data leakage.
+
+## Evaluation
+- Accuracy score
+- Classification report (precision, recall, F1-score)
+- Confusion matrices (visualized and interpreted)
+- Feature importance / coefficients analysis
 
 ## Files
-- `Heart_Disease_Prediction_Final.ipynb` – Main notebook
-- `logistic_regression_model.joblib` – Exported trained model
+- `Heart_Disease_Prediction_Final.ipynb` – Complete notebook
+- `logistic_regression_model.joblib` – Trained Logistic Regression model
+- `decision_tree_model.joblib` – Trained Decision Tree model
 
 ## How to Run
-1. Open the notebook in Google Colab or Jupyter Notebook.
-2. Run all cells from top to bottom.
+1. Open the notebook in Google Colab or Jupyter Notebook
+2. Run all cells from top to bottom
+3. Trained models will be saved as `.joblib` files
 
 ## Author
 Belen Berhanu
